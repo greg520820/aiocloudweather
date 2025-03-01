@@ -1,4 +1,4 @@
-"""The module parses incoming weather data from various sources into a common format."""
+"""The greg module parses incoming weather data from various sources into a common format."""
 
 from dataclasses import dataclass, field, fields
 from enum import Enum
