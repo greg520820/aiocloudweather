@@ -89,21 +89,12 @@ class WundergroundRawSensor:
     )
     windgustdirection: float = field(
         default=None, metadata={"unit": DEGREE, "arg": "windgustdir"}
-    )
-    uv: int = field(default=None, metadata={"unit": UV_INDEX, "arg": "UV"})
-    solarradiation: float = field(
-        default=None,
-        metadata={
-            "unit": LIGHT_LUX,
-            "factor": 1000,
-            "arg": "solarRadiation",
-        },
-    )
+   )
     solarradiation_new: float = field(
         default=None,
         metadata={
             "unit": UnitOfIrradiance.WATTS_PER_SQUARE_METER,
-            "arg": "solarradiation",
+            "arg": "solarRadiation",
             "alternative_for": "solarradiation",
         },
     )
